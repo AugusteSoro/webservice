@@ -1,0 +1,24 @@
+{
+  "name": "web-service",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "eject": "react-scripts eject",
+    "test": "react-scripts test",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-fileupload": "^1.0.0",
+    "http-errors": "~1.6.2",
+    "jsonwebtoken": "^8.4.0",
+    "md5": "^2.2.1",
+    "mongoose": "^5.3.12",
+    "morgan": "~1.9.0",
+    "nodemailer": "^4.7.0"
+  }
+}

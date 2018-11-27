@@ -1,0 +1,31 @@
+version: '3'
+services:
+  auth:
+    build:
+      context: .
+      args:
+        port: 3000
+        service: "auth"
+    ports:
+     - "3000:3000"
+  mailer:
+    build:
+      context: .
+      args:
+        port: 3001
+        service: "mailer"
+    ports:
+     - "3001:3001"
+  uploader:
+    build:
+      context: .
+      args:
+        port: 3002
+        service: "uploader"
+    ports:
+     - "3002:3002"
+  maildev:
+    image: djfarrelly/maildev
+    ports:
+     - "1080:1080"
+     - "1025:1025"
